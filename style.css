@@ -1,5 +1,7 @@
 * {margin: 0; padding: 0;}
-
+body{
+    min-width: 300px;
+}
 .content {
     display: flex;
     margin: 100px 50px 50px 50px;
@@ -31,7 +33,7 @@
 }
 
 .currentPlayer {
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
     width: 140px;
     font-size: 18px;
     display: flex;
@@ -53,3 +55,23 @@
     padding: 5px;
     text-align: center;
 }
+@media (max-width: 600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 50px 50px 50px;
+        font-family: sans-serif;
+    }
+    .currentPlayer{
+        margin: 15px;
+    }
+    .stat{
+        margin: 15px;
+    }
+    .steps{
+        padding-left: 10px;
+        height: auto;
+        width: 170px;
+        background-color: aquamarine;
+    }
+ }
